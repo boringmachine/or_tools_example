@@ -1,0 +1,14 @@
+from coopr.pyomo import *
+
+model = AbstractModel()
+
+model.I = Set()
+model.J = Set()
+
+model.y = Var(model.J, within=Boolean)
+model.x = Var(modelI, model.J, within=Reals)
+model.d = Param(model.I)
+
+
+def con_rule(model, i):
+    return sum(model.x[i,j] for j in J) == model.d[i]
