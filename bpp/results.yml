@@ -1,0 +1,115 @@
+# ==========================================================
+# = Solver Results                                         =
+# ==========================================================
+# ----------------------------------------------------------
+#   Problem Information
+# ----------------------------------------------------------
+Problem: 
+- Name: unknown
+  Lower bound: 13.0
+  Upper bound: 13.0
+  Number of objectives: 1
+  Number of constraints: 350
+  Number of variables: 326
+  Number of nonzeros: 1262
+  Sense: minimize
+# ----------------------------------------------------------
+#   Solver Information
+# ----------------------------------------------------------
+Solver: 
+- Status: ok
+  Termination condition: optimal
+  Statistics: 
+    Branch and bound: 
+      Number of bounded subproblems: 67
+      Number of created subproblems: 67
+  Error rc: 0
+  Time: 0.0401139259338
+# ----------------------------------------------------------
+#   Solution Information
+# ----------------------------------------------------------
+Solution: 
+- number of solutions: 1
+  number of solutions displayed: 1
+- Gap: 0.0
+  Status: optimal
+  Message: None
+  Objective:
+    obj:
+      Value: 13
+  Variable:
+    x[13,12]:
+      Value: 1
+    x[16,12]:
+      Value: 1
+    x[6,5]:
+      Value: 1
+    y[9]:
+      Value: 1
+    y[12]:
+      Value: 1
+    x[22,3]:
+      Value: 1
+    x[24,10]:
+      Value: 1
+    x[20,8]:
+      Value: 1
+    x[23,10]:
+      Value: 1
+    y[3]:
+      Value: 1
+    x[7,11]:
+      Value: 1
+    x[4,9]:
+      Value: 1
+    x[11,13]:
+      Value: 1
+    y[8]:
+      Value: 1
+    x[14,1]:
+      Value: 1
+    x[12,6]:
+      Value: 1
+    x[17,6]:
+      Value: 1
+    x[10,13]:
+      Value: 1
+    y[11]:
+      Value: 1
+    y[5]:
+      Value: 1
+    x[1,1]:
+      Value: 1
+    x[15,7]:
+      Value: 1
+    x[21,4]:
+      Value: 1
+    y[1]:
+      Value: 1
+    x[8,9]:
+      Value: 1
+    y[6]:
+      Value: 1
+    x[2,7]:
+      Value: 1
+    x[3,5]:
+      Value: 1
+    x[9,2]:
+      Value: 1
+    x[19,11]:
+      Value: 1
+    y[7]:
+      Value: 1
+    y[4]:
+      Value: 1
+    x[5,3]:
+      Value: 1
+    x[18,2]:
+      Value: 1
+    y[10]:
+      Value: 1
+    y[13]:
+      Value: 1
+    y[2]:
+      Value: 1
+  Constraint: No values
