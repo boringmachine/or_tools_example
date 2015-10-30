@@ -18,7 +18,7 @@ def con2_rule(model, i):
     return sum(model.x[j,i] for j in model.I if j != i) == 1
 
 model.con1 = Constraint(model.I, rule=con1_rule)
-model.con3 = Constraint(model.I, rule=con2_rule)
+model.con2 = Constraint(model.I, rule=con2_rule)
 
 def con3_rule(model):
     return sum(model.f[1, j] for j in model.J) == model.n-1
