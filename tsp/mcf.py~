@@ -1,0 +1,22 @@
+from coopr.pyomo import *
+
+model = AbstractModel()
+
+model.I = Set()
+model.J = Set()
+
+model.x = Var(model.I, model.I, within=Boolean)
+model.f = Var(model.I, model.I, model.J, within=NonNegativeReals)
+
+model.c = Param(model.I, model.I)
+model.n = Param()
+
+def con1_rule(model, i):
+    return sum(model.x[i,j] for j in model.I if j != i) == 1
+
+def con2_rule(model, i):
+    return sum(model.x[j,i] for j in model.I if j != i) == 1
+
+model.con1 = Constraint(model.I, rule=con1_rule)
+model.con2 = Constraint(model.I, rule=con2_rule)
+
