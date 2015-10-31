@@ -38,6 +38,6 @@ model.con4 = Constraint(model.J, rule=con4_rule)
 model.con5 = Constraint(model.J, rule=con5_rule)
 
 def obj_rule(model):
-    return sum(model.c[i,j]*model.x[i,j] for i in model.I for j in model.J)
+    return sum(model.c[i,j]*model.x[i,j] for i in model.I for j in model.I)
 
 model.obj = Objective(rule=obj_rule, sense=minimize)
