@@ -6,13 +6,13 @@
 # ----------------------------------------------------------
 Problem: 
 - Name: unknown
-  Lower bound: 0.8
-  Upper bound: 0.8
+  Lower bound: 1480.0
+  Upper bound: 1480.0
   Number of objectives: 1
   Number of constraints: 3
   Number of variables: 3
   Number of nonzeros: 5
-  Sense: minimize
+  Sense: maximize
 # ----------------------------------------------------------
 #   Solver Information
 # ----------------------------------------------------------
@@ -24,7 +24,7 @@ Solver:
       Number of bounded subproblems: 0
       Number of created subproblems: 0
   Error rc: 0
-  Time: 0.0451910495758
+  Time: 0.00577688217163
 # ----------------------------------------------------------
 #   Solution Information
 # ----------------------------------------------------------
@@ -36,8 +36,10 @@ Solution:
   Message: None
   Objective:
     obj:
-      Value: 0.8
+      Value: 1480
   Variable:
     x[2]:
-      Value: 0.4
+      Value: 6
+    x[1]:
+      Value: 20
   Constraint: No values

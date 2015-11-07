@@ -9,9 +9,9 @@ Problem:
   Lower bound: 3047.0
   Upper bound: 3047.0
   Number of objectives: 1
-  Number of constraints: 131
-  Number of variables: 126
-  Number of nonzeros: 373
+  Number of constraints: 35
+  Number of variables: 26
+  Number of nonzeros: 129
   Sense: minimize
 # ----------------------------------------------------------
 #   Solver Information
@@ -21,10 +21,10 @@ Solver:
   Termination condition: optimal
   Statistics: 
     Branch and bound: 
-      Number of bounded subproblems: 3
-      Number of created subproblems: 3
+      Number of bounded subproblems: 1
+      Number of created subproblems: 1
   Error rc: 0
-  Time: 0.0126798152924
+  Time: 0.0421597957611
 # ----------------------------------------------------------
 #   Solution Information
 # ----------------------------------------------------------
@@ -38,42 +38,22 @@ Solution:
     obj:
       Value: 3047
   Variable:
-    f[4,3,2]:
+    u[2]:
+      Value: 4
+    x[4,5]:
       Value: 1
-    x[2,5]:
+    u[4]:
+      Value: 2
+    x[1,3]:
       Value: 1
-    f[5,4,4]:
+    x[2,1]:
       Value: 1
-    f[2,5,4]:
+    x[5,2]:
       Value: 1
-    f[2,5,3]:
+    x[3,4]:
       Value: 1
-    x[5,4]:
+    u[3]:
       Value: 1
-    x[3,1]:
-      Value: 1
-    f[5,4,3]:
-      Value: 1
-    f[4,3,3]:
-      Value: 1
-    f[3,1,2]:
-      Value: 1
-    f[5,4,2]:
-      Value: 1
-    f[2,5,5]:
-      Value: 1
-    f[1,2,3]:
-      Value: 1
-    x[4,3]:
-      Value: 1
-    f[1,2,2]:
-      Value: 1
-    f[1,2,5]:
-      Value: 1
-    f[2,5,2]:
-      Value: 1
-    f[1,2,4]:
-      Value: 1
-    x[1,2]:
-      Value: 1
+    u[5]:
+      Value: 3
   Constraint: No values
